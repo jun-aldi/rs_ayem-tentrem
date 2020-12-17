@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #ffffff !important;
+    font-family: 'Rubik' !important;
 }
 .navbar {
     background: #F4F4F4;
@@ -12,6 +13,14 @@ body{
     background-color: #F4F4F4 !important;
     border: none !important;
     border-bottom: #c5c5c5 solid 1px !important;
+}
+.dropdown-menu .active {
+    background-color: #F4F4F4 !important;
+    border: none !important;
+}
+.dropdown-menu:hover .active:hover {
+    background-color: #F4F4F4 !important;
+    border: none !important;
 }
 .sosmed {
 	position: fixed;
