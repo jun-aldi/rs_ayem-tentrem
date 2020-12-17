@@ -8,6 +8,11 @@ body{
     background: #F4F4F4;
     padding-right: 6rem !important;
 }
+.dropdown-menu {
+    background-color: #F4F4F4 !important;
+    border: none !important;
+    border-bottom: #c5c5c5 solid 1px !important;
+}
 .sosmed {
 	position: fixed;
 	z-index:9;
