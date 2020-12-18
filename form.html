@@ -74,7 +74,7 @@
     <div class="section-xl">
         <div class="container">
             <div class="pendaftaran_col text-center">
-                <h1 style="color: white;">PENDAFTARAN</h1>
+                <h1 style="color: white;">FORM PENDAFTARAN</h1>
             </div>
             <div class="row">
                 <div class="col-sm-6 contact-info"> 		
@@ -82,23 +82,44 @@
                         <tr>
                             <td colspan="2"><center><b>DATA PASIEN</b></center></td>
                         </tr>
+                            <tr style="background:#ffc107;">
+                                <td style="font-weight: bold;">No. Registrasi</td>
+                                <td style="font-weight: bold;">
+                                    <input type="text" class="form-control" name='id_registrasi' value="QWRTZ-054"  readonly >
+                                </td>
+                                    
+                            </tr>
+                            <tr >
+                                <td> Pilih Dokter </td>
+                                <td> 
+                                    <select class="form-control" name="klinik_dituju" value=""  >
+                                        <option value='' > -- Pilih ---  </option>
+                                        <option value='dr. Faizah Mala Rahayu, Sp.A' >dr. Faizah Mala Rahayu, Sp.A </option>
+                                        <option value='dr. Raden Lazuardi, Sp.A, M.Kes' >dr. Raden Lazuardi, Sp.A, M.Kes </option>
+                                        <option value='dr. Ade Padmi Yulianti, Sp.A' >dr. Ade Padmi Yulianti, Sp.A </option>
+                                        <option value='dr. Wirda Permata, Sp.A.M.Sc' >dr. Wirda Permata, Sp.A.M.Sc </option>
+                                        <option value='dr. Baktiono Purwanto Rajata, Sp.Og, M.Kes' >dr. Baktiono Purwanto Rajata, Sp.Og, M.Kes </option>
+                                        <option value='dr Hendra C.Kumara, Sp.OT,M.Kes' >dr.Hartaka, Sp.PD, M.Kes </option>
+                                        <option value='dr.Agnes Yuniar, Sp.PD, M.Kes' >dr.Agnes Yuniar, Sp.PD, M.Kes</option>
+                                    </select>
+                            </tr>
                             <tr>
                                 <td> NIK/No.KK</td>
                                 <td>
-                                    <input type="text" class="form-control" name="nik" id='nik' value=''> 
+                                    <input type="number" class="form-control" name="nik" id='nik' value=''> 
                                     </td>
                             </tr>
                             <tr>
-                                <td> Nama Sesuai NIK/KK </td>
+                                <td> Nama Lengkap</td>
                                 <td> 
-                                    <input type="text" class="form-control" name="nama_pasien" value="" id="nama" > 
+                                    <input type="text" class="form-control" name="nama_pasien" value="" id="nama" placeholder="Sesuai NIK/KK "> 
                                                                         </td>
                             </tr>	
                             <tr>
                                 <td> Tanggal Lahir </td>
                                 <td>
-                                    <input type="input" class="form-control" name="tgl_lahir" name="tgl_lahir" id="tgllahir" data-date-format="dd-mm-yyyy"value="" ><!-- id="tgllahir" value="" > -->
-                                                                    </td>
+                                    <input type="date" class="form-control" name="pj_tgl_lahir" value="" >
+                                                                </td>
                             </tr>	
                             <tr>
                                 <td> Jenis Kelamin</td>
@@ -170,18 +191,12 @@
                                                                     </td>
                             </tr>
                             <tr>
-                                <td> Nomor Whatsapp </td>
+                                <td> Nomor HP</td>
                                 <td>
-                                    <input type="text" class="form-control" name="no_wa" id="no_wa" value="">
+                                    <input type="number" class="form-control" name="no_wa" id="no_HP" value="">
                                                                     </td>
                             </tr>	
-                            <tr style="background:#d7385e;">
-                                <td>No. Registrasi</td>
-                                <td>
-                                    <input type="text" class="form-control" name='id_registrasi' value="QWRTZ-054"  readonly >
-                                </td>
-                                    
-                            </tr>
+
                     </table>
                 </div>
                 <div class="col-sm-6">
@@ -237,42 +252,7 @@
                                 <input type="text" class="form-control" name="pj_nomorhp" id="pj_nomorhp" value="" >
                                                             </td>
                         </tr>
-                        <tr colspan=2>
-                            <td> </td>
-                        <tr>
-    
-                        <tr>
-                            <td> Tanggal Periksa  &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td> 
-                                <div class="input-group date" data-provide="datepicker" >
-                                    <input type="text" class="form-control" name="tgl_periksa" id="tanggal_input" data-date-format="dd-mm-yyyy" value="">
-                                        <div class="input-group-addon">
-                                            <span class="glyphicon glyphicon-th"></span>
-                                        </div>
-                                </div>
-    
-                            </td>
-                        </tr>
-    
-                        <tr>
-                            <td> Nama Dokter </td>
-                            <td> 
-                                <select class="form-control" name="klinik_dituju" value=""  >
-                                    <option value='' > -- Pilih ---  </option>
-                                    <option value='dr. Faizah Mala Rahayu, Sp.A' >dr. Faizah Mala Rahayu, Sp.A </option>
-                                    <option value='dr. Raden Lazuardi, Sp.A, M.Kes' >dr. Raden Lazuardi, Sp.A, M.Kes </option>
-                                    <option value='dr. Ade Padmi Yulianti, Sp.A' >dr. Ade Padmi Yulianti, Sp.A </option>
-                                    <option value='dr. Wirda Permata, Sp.A.M.Sc' >dr. Wirda Permata, Sp.A.M.Sc </option>
-                                    <option value='dr. Baktiono Purwanto Rajata, Sp.Og, M.Kes' >dr. Baktiono Purwanto Rajata, Sp.Og, M.Kes </option>
-                                    <option value='dr Hendra C.Kumara, Sp.OT,M.Kes' >dr.Hartaka, Sp.PD, M.Kes </option>
-                                    <option value='dr.Agnes Yuniar, Sp.PD, M.Kes' >dr.Agnes Yuniar, Sp.PD, M.Kes</option>
-                                </select>
-                        </tr>		
-                        <tr>
-                            <td id="captcha">
-                            </td>
-                            <td><input type="text" name="recaptcha" id="recaptcha" placeholder="Type the captcha" class="form-control"/></td>
-                        </tr>
+		
                         <tr>
                             <td colspan='2'>
                                 <center>
